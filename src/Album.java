@@ -27,7 +27,7 @@ public class Album {
     public void printTrackListings(List<Song> songs){
         int num = 1;
         for(Song song : songs){
-            System.out.println(num++ + ". " +  song);
+            System.out.println(num++ + ". " +  song.getTitle() + " by " + song.getArtist());
         }
     }
 }
